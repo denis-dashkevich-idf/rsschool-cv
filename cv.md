@@ -9,7 +9,7 @@ Hi! I am junior front-end developer! I have made my way from learning Java but n
 
 ### Skills in Frontend
 1. HTML
-2. CSS/SASS
+2. CSS/SASS/SCSS/LESS
 3. Bootstrap
 4. JavaScript
 5. Photoshop/Figma
