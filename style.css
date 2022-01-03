@@ -1,0 +1,112 @@
+:root {
+  --red: #ff000d;
+  --light-black: #161515e1;
+  --tribuchet-font: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #299993;
+  color: var(--light-black);
+  font-family: var(--tribuchet-font);
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill,
+.about {
+  border-radius: 10px;
+  margin: 1rem 0.2rem 0 0.2rem;
+  padding: 1rem;
+  border: 1px solid #00000018;
+  box-shadow: 0 -3px 0 var(--red);
+  background-color: #f8e584;
+  min-height: 95vh;
+  max-width: 35vw;
+  flex: 1;
+}
+
+/****skils*****/
+.skill {
+  margin-right: 0.2rem;
+  min-height: 95vh;
+  text-align: center;
+}
+
+.skill .profession {
+  padding-top: 0.5rem;
+}
+
+.skill .knowledge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.skill .knowledge .frontend,
+.skill .knowledge .programming,
+.skill .knowledge .language {
+  padding: 1rem;
+}
+
+.skill .knowledge h2 {
+  padding-bottom: 0.7rem;
+}
+
+.skill .knowledge p {
+  padding-bottom: 0.3rem;
+}
+
+/****about*****/
+
+.about .svg-cart {
+  display: flex;
+  justify-content: center;
+}
+
+.about .svg-cart > svg {
+  width: 50%;
+}
+
+.about .personal-inf {
+  padding-top: 1rem;
+}
+
+.about .personal-inf > div {
+  padding: 0.5rem 0;
+}
+
+.about .personal-inf h2 {
+  padding-bottom: 0.3rem;
+}
+
+@media (max-width: 820px) {
+  .flex-container {
+    flex-direction: column-reverse;
+  }
+
+  .skill,
+  .about {
+    margin: 1rem auto 0.5rem auto;
+    min-height: auto;
+    max-width: unset;
+    width: 80vw;
+  }
+}
